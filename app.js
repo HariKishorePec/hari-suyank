@@ -11,8 +11,8 @@ const PORT = process.env.PORT || 5000;
 connectDB();
 
 app.get('/',(req, res)=>{
-    res.send('go to <a href="/api/getAllPosts"> /api/getAllPosts</a> <br>'+
-             '<a href="/api/addNewPost">/api/addNewPost </a> to add a new document');
+    res.send('Go to <a href="/api/getAllPosts"> /api/getAllPosts</a> <br>'+
+             '<br> <a href="/api/addNewPost">/api/addNewPost </a> to add a new document');
 });
 
 app.get('/insert', (req, res)=>{
