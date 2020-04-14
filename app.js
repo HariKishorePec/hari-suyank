@@ -26,7 +26,7 @@ app.get('/insert', (req, res)=>{
     pat.save().then(()=>{
         console.log('data inserted');
     });
-    res.send('Data   91 Document) inserted successfully');
+    res.send('Data   ( 1 Document) inserted successfully');
 } );
 
 app.get('/find/:name', (req, res)=>{
@@ -49,7 +49,7 @@ app.get('/get', async (req,res)=>{
     let results = {
         success: true,
         count:  authors.length,
-        data : authors
+        posts : authors
     };
     res.header("Content-Type",'application/json');
     res.send(JSON.stringify(results, null, 4));
@@ -61,7 +61,7 @@ app.get('/api/getAllPosts', async (req,res)=>{
     let results = {
         success: true,
         count:  posts.length,
-        data : posts
+        posts : posts
     };
     res.header("Content-Type",'application/json');
     res.send(JSON.stringify(results, null, 4));
