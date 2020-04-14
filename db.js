@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-
-const uri = `mongodb+srv://${process.env.USER}:${process.env.PASS}@cluster0-pswsd.mongodb.net/test?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://hari123:hari123@cluster0-pswsd.mongodb.net/test?retryWrites=true&w=majority`;
+//const uri = `mongodb+srv://${process.env.USER}:${process.env.PASS}@cluster0-pswsd.mongodb.net/test?retryWrites=true&w=majority`;
 const connectDB = async () =>{
     try {
         const conn = await mongoose.connect(uri, {
